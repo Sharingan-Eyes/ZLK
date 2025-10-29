@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        .nav-link {
+            color: black;
+        }
+        .active {
+            background-color: #bfdbfe;
+        }
+        .custom-form-control {
+            border: 1px solid black;
+            padding: 2px 5px;
+        }
+        .custom-button {
+            background-color: white;
+            border: 1px solid black;
+            padding: 2px 5px;
+            box-shadow: 4px 4px 0px black;
+            font-size: 14px;
+        }
+    </style>
+    <title>Hello, world!</title>
+</head>
+
+<body class="vw-100 vh-100 border border-dark d-flex flex-column">
+    <div class="p-3 font-weight-bold border-bottom border-dark" style="background-color: #059669;">
+        James' Admin Dashboard
+    </div>
+    <div class="d-flex flex-row h-100">
+        <nav class="nav border-right border-dark dark d-flex flex-column list-unstyled" style="min-width: 200px;">
+            <li class="nav-item border-bottom border-dark">
+                <a class="nav-link" href="./compose.html"><i class="fa fa-pencil"></i> Compose</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link border-bottom border-dark d-flex justify-content-between align-items-center" href="./inbox.html">
+                    <span>Inbox</span>
+                    <i class="fas fa-chevron-down float-right" style="font-size: 12px;"></i>
+                </a>
+                <ul class="nav flex-column">
+                    <li class="nav-item border-bottom border-dark pl-3 active">
+                        <a class="nav-link" href="./claim.html">Claim</a>
+                    </li>
+                    <li class="nav-item border-bottom border-dark pl-3" style="background-color: #e5e7eb;">
+                        <a class="nav-link" href="./non-claim.html">Non-Claim</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item border-bottom border-dark">
+                <a class="nav-link" href="./sent.html">Sent</a>
+            </li>
+            <li class="nav-item border-bottom border-dark">
+                <a class="nav-link" href="./draft.html">Draft</a>
+            </li>
+            <li class="nav-item border-bottom border-dark">
+                <a class="nav-link" href="./trash.html">Trash</a>
+            </li>
+            <li class="nav-item border-bottom border-dark">
+                <a class="nav-link" href="./contact.html"><i class="fa fa-user"></i> Contact</a>
+            </li>
+        </nav>
+        <div class="border-right border-dark dark d-flex flex-column" style="min-width: 400px;">
+            <div class="d-flex justify-content-between border-bottom border-dark p-2">
+                <div><i class="fa fa-trash"></i></div>
+                <div class="text-black-50">
+                    <i class="fa fa-paperclip"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-refresh text-dark"></i>
+                </div>
+            </div>
+            <div class="d-flex p-1 border-bottom border-dark">
+                <input type="text" class="custom-form-control mr-1" placeholder="Claim ID">
+                <input type="text" class="custom-form-control mr-1 w-25" placeholder="Email">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="d-flex border-bottom border-dark p-2 active">
+                <div class="form-check h-100 d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                </div>
+                <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between">
+                        <a class="font-weight-bolder text-primary"><u>#101</u></a>
+                        <div class="text-black-50">
+                            <i class="fa fa-paperclip"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-flag"></i>
+                        </div>
+                    </div>
+                    <span class="font-weight-bolder">Claim Admin 1</span>
+                    <span class="font-weight-bolder">(No Subject)</span>
+                    <span class="text-black-50">Hi, Claim Admin. This is the</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-right border-dark dark d-flex flex-column w-100">
+            <div class="d-flex justify-content-between border-bottom border-dark p-1" style="height: 41px;">
+                <div>
+                    <button type="button" class="custom-button">Reply</button>
+                    <button type="button" class="custom-button">Reply All</button>
+                    <button type="button" class="custom-button">Forward</button>
+                </div>
+                <div class="text-black-50">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-trash text-dark"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="">
+                    <div class="d-flex flex-row align-items-center w-100 p-2">
+                        <span class="mr-3" style="white-space: nowrap; min-width: 80px;">Claim ID</span>
+                        <a class="" href="#" >
+                            <u>#101 - GOOG Claim for Alex Pun</u>
+                        </a>
+                      </div>
+                </div>
+                <div class=" w-100" style="border-top: 1px black dotted;">
+                    <div class="d-flex flex-row align-items-center p-2">
+                        <span class="mr-3" style="white-space: nowrap; min-width: 80px;">From</span>
+                        <span>Claim_101@zlkclaim.com</span>
+                    </div>
+                </div>
+                <div class=" w-100" style="border-top: 1px black dotted;">
+                    <div class="d-flex flex-row align-items-center p-2">
+                        <span class="mr-3" style="white-space: nowrap; min-width: 80px; cursor: pointer;" data-toggle="modal" data-target="#exampleModalScrollable">To</span>
+                        <a class="custom-form-control">Claim Admin 1 (claim@admin.com)</a>
+                      </div>
+                </div>
+                <div class=" w-100" style="border-top: 1px black dotted;">
+                    <div class="d-flex flex-row align-items-center p-2">
+                        <span class="mr-3" style="white-space: nowrap; min-width: 80px;">Files</span>
+                        <div class="d-flex">
+                            <a class="mr-3"><i class="fa fa-file-pdf"></i> <span class="text-primary"><u>claim_file.pdf</u></span></a>
+                            <a><i class="fa fa-file-word"></i> <span class="text-primary"><u>claim_file.docs</u></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-100" style="border-top: 1px black dotted;">
+                    <div class="d-flex flex-row align-items-center p-2">
+                        <span class="mr-3 font-weight-bolder" style="white-space: nowrap; min-width: 80px;">Claim Admin 1</span>
+                    </div>
+                </div>
+                <div class=" w-100" style="border-top: 1px black dotted;">
+                    <div class="d-flex flex-row align-items-center p-2">
+                        This is contents.
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+          <div class="modal-content" style="width: 600px;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Contracts</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col"><input type="checkbox"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><input type="checkbox"></th>
+                        <td>Claim Admin 1</td>
+                        <td>claim@admin2.com</td>
+                        <td>Claim Admin from Firm 1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><input type="checkbox"></th>
+                        <td>Claim Admin 2</td>
+                        <td>claim@admin2.com</td>
+                        <td>Claim Admin from Firm 2</td>
+                    </tr>
+                      <tr></tr>
+                        <th scope="row"><input type="checkbox"></th>
+                        <td>Claim Admin 3</td>
+                        <td>claim@admin3.com</td>
+                        <td>Claim Admin from Firm 3</td>
+                    </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="custom-button">Add</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        function toggleMenu(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const submenu = event.target.nextElementSibling; // Get the next sibling (the submenu)
+            const icon = event.target.querySelector("i:last-child"); // Get the last icon (chevron)
+
+            if (submenu) {
+                submenu.classList.toggle("collapse"); // Toggle the display of the submenu
+
+                // Toggle the chevron icon
+                if (submenu.classList.contains("collapse")) {
+                    icon.classList.remove("fa-chevron-up");
+                    icon.classList.add("fa-chevron-down");
+                } else {
+                    icon.classList.remove("fa-chevron-down");
+                    icon.classList.add("fa-chevron-up");
+                }
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
