@@ -1,0 +1,22 @@
+---
+deployment:
+  tasks:
+
+    # Root Files
+
+    - export ROOT_PATH=/home/portfolioonthego/public_html/@CRON2/YahooDataScraper/
+
+
+    # Key Files
+
+
+    # Pages
+
+    - /bin/cp index.php $ROOT_PATH
+
+    - /bin/cp composer.json $ROOT_PATH
+
+
+    # Folders
+
+    - /bin/cp -R vendor $ROOT_PATH
